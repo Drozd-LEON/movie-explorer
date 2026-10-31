@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Image from "next/image";
+import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,21 +17,43 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header>
-          <nav>
-            <h2>Movie Explorer</h2>
-
-            <div>
-              <Link href="/">Home</Link>
-              <Link href="/movies">Movies</Link>
-              <Link href="/about">About</Link>
-            </div>
-          </nav>
+          <Navbar />
         </header>
 
         <main>{children}</main>
 
         <footer>
           <p>© 2026 Movie Explorer</p>
+
+          <a
+            href="https://www.themoviedb.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/tmdb-logo.svg"
+              alt="TMDB logo"
+              width={160}
+              height={80}
+              style={{ width: "160px", height: "auto" }}
+            />
+          </a>
+
+          <p>
+            This product uses the TMDB API but is not endorsed or
+            certified by TMDB.
+          </p>
+
+          <p>
+            Movie data provided by{" "}
+            <a
+              href="https://www.themoviedb.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Movie Database (TMDB)
+            </a>.
+          </p>
         </footer>
       </body>
     </html>
