@@ -1,0 +1,120 @@
+
+.home-page {
+    width: 100%;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+    padding: 80px 30px;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #d1d5db;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Explore Movies button */
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #facc15;
+    color: #111827;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    background-color: #eab308;
+    text-decoration: none;
+}
+
+.hero-button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Features section */
+
+.features {
+    margin-top: 70px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #1f2937;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.feature-card h3 {
+    color: #facc15;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.feature-card p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        margin-top: 45px;
+    }
+
+    .features h2 {
+        font-size: 25px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -22,15 +22,6 @@ nav {
   align-items: center;
 }
 
-nav h2 {
-  margin: 0;
-}
-
-nav div {
-  display: flex;
-  gap: 25px;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -58,14 +49,56 @@ footer {
   padding: 20px;
 }
 
+/* Website logo */
+
+.site-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: #facc15;
+  text-decoration: none;
+}
+
+/* Navigation links */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  padding: 8px 0;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #facc15;
+  border-bottom-color: #facc15;
+}
+
+
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
     gap: 15px;
   }
 
-  nav div {
-    gap: 15px;
+  .site-logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    gap: 20px;
   }
 
   main {

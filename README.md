@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Explorer
 
-## Getting Started
+Movie Explorer is a website where users can discover popular movies, search for movies by title, and view detailed information about each movie.
 
-First, run the development server:
+This project was created as a school assignment using Next.js and TypeScript.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Target Audience
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website is designed for people who enjoy watching movies and want an easy way to discover new films.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Browse popular movies.
+- Search for movies by title.
+- View movie posters, release dates, and ratings.
+- Open individual movie pages with descriptions, genres, and runtime.
+- Responsive design for desktop and mobile devices.
+- Error handling for failed API requests and movies that cannot be found.
 
-## Learn More
+## Technologies
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js (App Router)
+- React
+- TypeScript
+- CSS
+- TMDB API
+- Git and GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Run the Project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the GitHub repository.
+2. Open the project folder in VS Code.
+3. Install dependencies:
 
-## Deploy on Vercel
+   `npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Create a `.env.local` file in the root folder and add:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   `TMDB_ACCESS_TOKEN=your_tmdb_read_access_token`
+
+5. Start the development server:
+
+   `npm run dev`
+
+6. Open http://localhost:3000 in your browser.
+
+A free TMDB account and API Read Access Token are required.
+
+## API
+
+Movie Explorer uses The Movie Database (TMDB) API to retrieve popular movies, search results, and individual movie details.
+
+This product uses the TMDB API but is not endorsed or certified by TMDB.
+
+Website: https://www.themoviedb.org/
+
+## Limitations
+
+- The website requires an internet connection.
+- Movie information depends on the TMDB API.
+- Search results are limited to the first page returned by TMDB.
+- Users cannot create accounts or save favorite movies.
+- The website is intended for educational purposes.
+
+## Author
+
+Ivan Drozd
+
+Frontend Development Student — Gokstad Akademiet
